@@ -41,7 +41,7 @@ header .menu{
 	display: none;
 }
 header .navv{
-	margin: 10px 0;
+	margin: 12px 0;
 }
 header .navv li{
 	display: inline-block;
@@ -52,6 +52,10 @@ header .navv li a{
 	font-size: 14px;
 	padding: 14px 20px;
 	border-right: 1px solid #4c4c4c;
+}
+header .navv li a:hover{
+	text-decoration: none;
+	color: #FFA066;
 }
 header .navv li:first-child a{
 	padding-left: 0;
@@ -71,9 +75,9 @@ header .navv li:last-child a{
 }
 .section-block1 h1{
 	padding: 25px 60px;
-    font-size: 30px;
+    font-size: 24px;
     color: #fff;
-    background: rgba(255,255,255,0.4);
+    background: rgba(71,27,0,0.3);
     position: absolute;
     bottom: 160px;
     margin: 0;
@@ -128,7 +132,7 @@ header .navv li:last-child a{
 }
 .section-block .cap-action{
 	color: #ff0000;
-	font-size: 50px;
+	font-size: 32px;
 }
 .section-block b{
 	display: block;
@@ -140,7 +144,7 @@ header .navv li:last-child a{
 }
 .section-block .cat-block{
 	display: inline-block;
-	width: 40%;
+	width: 30%;
 	min-width: 290px;
 	box-sizing: border-box;
 	padding: 30px;
@@ -152,8 +156,9 @@ header .navv li:last-child a{
 	margin: 10px 0;
 }
 .section-block .cat-block .price{
-	margin-left: 40px;
+	margin-left: 20px;
 	font-size: 24px;
+	clear: both;
 }
 .section-blockwold .cat-block .price{
 	margin-left: 5px;
@@ -161,19 +166,20 @@ header .navv li:last-child a{
 .section-blockwold .cat-block .old-price{
 	font-size: 16px;
     margin: 10px 5px 0 10px;
-    position: relative;	
+    position: relative;
+    color: #aaa;    
 }
 .section-blockwold .cat-block .old-price:before{
 	content: '';
     display: block;
     position: absolute;
     width: 100%;
-    border-top: 1px solid #000;
+    border-top: 1px solid #aaa;
     transform: rotate(10deg);
     margin: 10px 0 0;
 }
 .section-block .cat-block button{
-	margin-right: 40px;
+	margin-right: 20px;
 	padding: 10px 45px;
 	color: #fff;
 	border: none;
@@ -189,7 +195,7 @@ header .navv li:last-child a{
 }
 .section-block .cat-block img{
 	width: 100%;
-	max-width: 380px;
+	max-width: 290px;
 	height: auto;
 }
 .section-block .arrows, .sec-block .arrows{
@@ -238,7 +244,7 @@ header .navv li:last-child a{
 	color: #fff;
 	background: rgba(71,27,0,0.3);
 	padding: 25px 25px 25px 60px;
-	font-size: 16px;
+	font-size: 24px;
 }
 .sec-block .price{
 	position: absolute;
@@ -278,7 +284,7 @@ header .navv li:last-child a{
 	width: 120px;
 	height: 120px;
 	margin: 0 auto;
-	background: #ccc;
+	background: #fff;
 	border-radius: 50%;
 }
 .advantages .advantages-block a img{
@@ -561,7 +567,7 @@ footer .footer-block3 span{
 	}
 }
 @media (max-width: 400px){
-	.section-block .cat-block button.right{
+	/*.section-block .cat-block button.right{
 		float: none;
-	}
+	}*/
 }
