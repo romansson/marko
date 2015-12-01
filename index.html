@@ -9,11 +9,13 @@
 		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/component.css">
+		<link rel="stylesheet" href="css/lightslider.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/script.js"></script>
 		<script src="fancybox/source/jquery.fancybox.pack.js"></script>
 		<script src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script src="js/lightslider.js"></script>
 	<body>
 		<header>
 			<div class="content">
@@ -25,12 +27,12 @@
 				</div>
 				<nav class="right">
 					<ul class="navv">
-						<li><a href="">ГЛАВНАЯ</a></li>
-						<li><a href="#sec2">КАТАЛОГ</a></li>
-						<li><a href="#sec8">О НАС</a></li>
-						<li><a href="#sec9">ГАЛЕРЕЯ</a></li>
-						<li><a href="#sec10">ДОСТАВКА И ОПЛАТА</a></li>
-						<li><a href="#sec11">КОНТАКТЫ</a></li>
+						<li><a class="scroll" href="">ГЛАВНАЯ</a></li>
+						<li><a class="scroll" href="#sec2">КАТАЛОГ</a></li>
+						<li><a class="scroll" href="#sec8">О НАС</a></li>
+						<li><a class="scroll" href="#sec9">ГАЛЕРЕЯ</a></li>
+						<li><a class="scroll" href="#sec10">ДОСТАВКА И ОПЛАТА</a></li>
+						<li><a class="scroll" href="#sec11">КОНТАКТЫ</a></li>
 					</ul>
 				</nav>
 				<div class="clearfix"></div>
@@ -39,13 +41,13 @@
 		<section>
 			<div class="section-block1">
 				<h1>Браслеты с индивидуальной гравировкой</h1>
-				<form action="">
+				<form action="" id="sec0">
 					<h2>Оставить заявку</h2>
 					<p>Имя</p>
 					<input type="text">
 					<p>Номер телефона</p>
 					<input type="text">
-					<input type="submit" value="Оставить заявку" class="sb1sub">
+					<input type="submit" value="Оставить заявку" class="sb1sub" data-toggle="modal" data-target=".bs-example-modal-sm1">
 				</form>
 				<div class="clearfix"></div>
 			</div>
@@ -54,23 +56,23 @@
 					<h3>Двойные браслеты с уникальной гравировкой</h3>
 					<b></b>	
 					<div class="cat-block cat-block1">
-						<img src="images/img1.png" alt="">
+						<a href=""><div><span class="founder">Подробнее</span><b></b></div></a>
 						<p>Двойные браслеты с уникальной гравировкой (DG-21)</p>
 						<span class="price left">239 грн.</span>
-						<button class="right">Купить</button>
+						<button class="right" data-toggle="modal" data-target=".bs-example-modal-lg">Купить</button>
 						<div class="clearfix"></div>
 					</div>
 					<div class="cat-block cat-block2">
-						<img src="images/img2.png" alt="">
+						<a href=""><div><span class="founder">Подробнее</span><b></b></div></a>
 						<p>Двойные браслеты с уникальной гравировкой (DG-21)</p>
 						<span class="price left">239 грн.</span>
-						<button class="right">Купить</button>
+						<button class="right" data-toggle="modal" data-target=".bs-example-modal-lg">Купить</button>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 				<div class="arrows">
-					<a href="#sec3" class="down"></a>
-					<a href="#sec2" class="up"></a>
+					<a href="#sec3" class="down scroll"></a>
+					<a href="#sec2" class="up scroll"></a>
 					<i></i>
 				</div>
 			</div>
@@ -79,23 +81,23 @@
 					<h3>Широкие браслеты с уникальной гравировкой</h3>
 					<b></b>	
 					<div class="cat-block cat-block1">
-						<img src="images/img3.png" alt="">
+						<a href=""><div><span class="founder">Подробнее</span><b></b></div></a>
 						<p>Двойные браслеты с уникальной гравировкой (DG-21)</p>
 						<span class="price left">239 грн.</span>
-						<button class="right">Купить</button>
+						<button class="right" data-toggle="modal" data-target=".bs-example-modal-lg">Купить</button>
 						<div class="clearfix"></div>
 					</div>
 					<div class="cat-block cat-block2">
-						<img src="images/img4.png" alt="">
+						<a href=""><div><span class="founder">Подробнее</span><b></b></div></a>
 						<p>Двойные браслеты с уникальной гравировкой (DG-21)</p>
 						<span class="price left">239 грн.</span>
-						<button class="right">Купить</button>
+						<button class="right" data-toggle="modal" data-target=".bs-example-modal-lg">Купить</button>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 				<div class="arrows">
-					<a href="#sec4" class="down"></a>
-					<a href="#sec3" class="up"></a>
+					<a href="#sec4" class="down scroll"></a>
+					<a href="#sec3" class="up scroll"></a>
 					<i></i>
 				</div>
 			</div>
@@ -104,50 +106,50 @@
 					<h3>Узкие, одинарные браслеты с уникальной гравировкой</h3>
 					<b></b>	
 					<div class="cat-block cat-block1">
-						<img src="images/img5.png" alt="">
+						<a href=""><div><span class="founder">Подробнее</span><b></b></div></a>
 						<p>Двойные браслеты с уникальной гравировкой (DG-21)</p>
 						<span class="price left">239 грн.</span>
-						<button class="right">Купить</button>
+						<button class="right" data-toggle="modal" data-target=".bs-example-modal-lg">Купить</button>
 						<div class="clearfix"></div>
 					</div>
 					<div class="cat-block cat-block2">
-						<img src="images/img6.png" alt="">
+						<a href=""><div><span class="founder">Подробнее</span><b></b></div></a>
 						<p>Двойные браслеты с уникальной гравировкой (DG-21)</p>
 						<span class="price left">239 грн.</span>
-						<button class="right">Купить</button>
+						<button class="right" data-toggle="modal" data-target=".bs-example-modal-lg">Купить</button>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 				<div class="arrows">
-					<a href="#sec5" class="down"></a>
-					<a href="#sec4" class="up"></a>
+					<a href="#sec5" class="down scroll"></a>
+					<a href="#sec4" class="up scroll"></a>
 					<i></i>
 				</div>
 			</div>
 			<div class="section-block section-block5 section-blockwold" id="sec5">
 				<div class="content">
-					<h3 class="cap-action">Двойной браслет - АКЦИЯ!</h3>
+					<h3 class="cap-action">Парные браслеты - АКЦИЯ!</h3>
 					<b></b>	
 					<div class="cat-block cat-block1">
-						<img src="images/img7.png" alt="">
+						<a href=""><div><span class="founder">Подробнее</span><b></b></div></a>
 						<p>Двойные браслеты с уникальной гравировкой (DG-21)</p>
 						<span class="old-price left">239 грн.</span>
 						<span class="price left">191 грн.</span>
-						<button class="right">Купить</button>
+						<button class="right" data-toggle="modal" data-target=".bs-example-modal-lgfor2">Купить</button>
 						<div class="clearfix"></div>
 					</div>
 					<div class="cat-block cat-block2">
-						<img src="images/img8.png" alt="">
+						<a href=""><div><span class="founder">Подробнее</span><b></b></div></a>
 						<p>Двойные браслеты с уникальной гравировкой (DG-21)</p>
 						<span class="old-price left">239 грн.</span>
 						<span class="price left">191 грн.</span>
-						<button class="right">Купить</button>
+						<button class="right" data-toggle="modal" data-target=".bs-example-modal-lgfor2">Купить</button>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 				<div class="arrows">
-					<a href="#sec6" class="down"></a>
-					<a href="#sec5" class="up"></a>
+					<a href="#sec6" class="down scroll"></a>
+					<a href="#sec5" class="up scroll"></a>
 					<i></i>
 				</div>
 			</div>
@@ -156,12 +158,12 @@
 				<h4>Marko box можно заказать дополнительно к браслету. Изготовлена из высококачественной фанеры, ручная обработка.</h4>
 				<div class="price">
 					<span>250 грн.</span>
-					<button>Купить</button>
+					<button data-toggle="modal" data-target=".bs-example-modal-lg1">Купить</button>
 					<div class="clearfix"></div>
 				</div>
 				<div class="arrows">
-					<a href="#sec7" class="down"></a>
-					<a href="#sec6" class="up"></a>
+					<a href="#sec7" class="down scroll"></a>
+					<a href="#sec6" class="up scroll"></a>
 					<i></i>
 				</div>
 			</div>
@@ -169,13 +171,12 @@
 				<img src="images/img10.png" height="715" width="1368" alt="">
 				<h4>Возможность внутренней гравировки</h4>
 				<div class="price">
-					<span>250 грн.</span>
-					<button>Купить</button>
+					<button class="right"><a href="#sec0" class="scroll">Оставить заявку</a></button>
 					<div class="clearfix"></div>
 				</div>
 				<div class="arrows">
-					<a href="#sec8" class="down"></a>
-					<a href="#sec7" class="up"></a>
+					<a href="#sec8" class="down scroll"></a>
+					<a href="#sec7" class="up scroll"></a>
 					<i></i>
 				</div>
 			</div>
@@ -200,8 +201,8 @@
 					</div>
 				</div>
 				<div class="arrows">
-					<a href="#sec9" class="down"></a>
-					<a href="#sec8" class="up"></a>
+					<a href="#sec9" class="down scroll"></a>
+					<a href="#sec8" class="up scroll"></a>
 					<i></i>
 				</div>
 			</div>
@@ -247,8 +248,8 @@
 					</div>
 				</div>
 				<div class="arrows">
-					<a href="#sec10" class="down"></a>
-					<a href="#sec9" class="up"></a>
+					<a href="#sec10" class="down scroll"></a>
+					<a href="#sec9" class="up scroll"></a>
 					<i></i>
 				</div>
 			</div>
@@ -277,15 +278,16 @@
 					</div>
 				</div>
 				<div class="arrows">
-					<a href="#sec11" class="down"></a>
-					<a href="#sec10" class="up"></a>
+					<a href="#sec11" class="down scroll"></a>
+					<a href="#sec10" class="up scroll"></a>
 					<i></i>
 				</div>
 			</div>
 		</section>
 		<footer id="sec11">
 			<div class="content">
-				<div class="footer-block footer-block1">
+				<div class=
+				"footer-block footer-block1">
 					<a href=""><img src="images/footer-logo.png" height="45" width="233" alt=""></a>
 				</div>
 				<div class="footer-block footer-block2">
@@ -299,35 +301,262 @@
 					</p>
 				</div>
 				<div class="footer-block footer-block3">
-					<a href=""><img src="images/foot-call.png" height="50" width="50" alt=""><span>Заказать звонок</span></a>
+					<a href="#sec0" class="scroll"><img src="images/foot-call.png" height="50" width="50" alt=""><span>Заказать звонок</span></a>
 				</div>
 			</div>
 			<a href="#" id="toTop"><img src="images/totop.png" height="64" width="64" alt=""></a>
 		</footer>
-		<script type="text/javascript">
+		<div class="modal fade bs-example-modal-lg modallarge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  			<div class="modal-dialog modal-lg">
+    			<div class="modal-content mod-1">
+    				<button type="button" class="close" data-dismiss="modal">&times;</button>
+      				<h3>Оформление заказа</h3>
+					<b></b>
+					<div class="bought-block bought-block1 left">
+						<ul class="vertical">
+  							<li data-thumb="images/img1.png">
+    							<img src="images/img1.png" />
+  							</li>
+  							<li data-thumb="images/img2.png">
+    							<img src="images/img2.png" />
+  							</li>
+  							<li data-thumb="images/img3.png">
+    							<img src="images/img3.png" />
+  							</li>
+  							<li data-thumb="images/img4.png">
+    							<img src="images/img4.png" />
+  							</li>
+						</ul>
+						<p>Двойные браслеты с уникальной гравировкой (DG-21)</p>
+						<span class="modalprice">389 грн.</span>
+					</div>
+					<div class="bought-block bought-block2 right">
+						<input type="text" class="modinp inpfull" placeholder="Текст гравировки/ссылка на картинку">
+						<h6>Опции товара:</h6>
+						<ol>
+							<li class="radio1 list1">
+								<input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked="checked">
+								<label for="optionsRadios1">Мужской</label>
+								<input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
+								<label for="optionsRadios2">Женский</label>
+							</li>
+							<li class="list2">Размер: 
+								<select name="" id="" class="modinp">
+									<option value="S - 17 см">S - 17 см</option>
+									<option value="S - 17 см">S - 17 см</option>
+									<option value="S - 17 см">S - 17 см</option>
+								</select>
+							</li>
+							<li class="radio1 list3">
+								<p>Внутренняя гравировка <span>(+50 грн.)</span>:</p>
+								<input type="radio" name="optionsRadios2" id="optionsRadios3" value="option3" checked="checked">
+								<label for="optionsRadios3">Да</label>
+								<input type="radio" name="optionsRadios2" id="optionsRadios4" value="option4">
+								<label for="optionsRadios4">Нет</label>
+								<input type="text" class="modinp right liinp" placeholder="Текст/ссылка на картинку">
+								<div class="clearfix"></div>
+							</li>
+							<li class="radio1 list3">
+								<p>Подарочная коробка <span>(+100 грн.)</span>:</p>
+								<div class="forcol">
+									<input type="radio" name="optionsRadios3" id="optionsRadios5" value="option5" checked="checked">
+									<label for="optionsRadios5">Да</label>
+									<input type="radio" name="optionsRadios3" id="optionsRadios6" value="option6">
+									<label for="optionsRadios6">Нет</label>
+								</div>	
+								<span>Цвет:</span>
+								<input type="radio" name="optionsRadios4" id="optionsRadios7" value="option7">
+								<label for="optionsRadios7">Коричневая</label>
+								<input type="radio" name="optionsRadios4" id="optionsRadios8" value="option8" checked="checked">
+								<label for="optionsRadios8">Бежевая</label>
+							</li>
+						</ol>
+						<input type="text" class="modinp" placeholder="Имя Фамилия">
+						<input type="text" class="modinp right"placeholder="Номер телефона">
+						<textarea name="" class="modinp" placeholder="Комментарий..."></textarea>
+						<button class="right modorder" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать</button>
+					</div>
+					<div class="clearfix"></div>
+    			</div>
+  			</div>
+		</div>
+		<div class="modal fade bs-example-modal-lgfor2 modallarge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  			<div class="modal-dialog modal-lg">
+    			<div class="modal-content mod-1">
+    				<button type="button" class="close" data-dismiss="modal">&times;</button>
+      				<h3>Оформление заказа</h3>
+					<b></b>
+					<div class="bought-block bought-block1 left">
+						<ul class="vertical">
+  							<li data-thumb="images/img1.png">
+    							<img src="images/img1.png" />
+  							</li>
+  							<li data-thumb="images/img2.png">
+    							<img src="images/img2.png" />
+  							</li>
+  							<li data-thumb="images/img3.png">
+    							<img src="images/img3.png" />
+  							</li>
+  							<li data-thumb="images/img4.png">
+    							<img src="images/img4.png" />
+  							</li>
+						</ul>
+						<p>Двойные браслеты с уникальной гравировкой (DG-21)</p>
+						<span class="modalprice">389 грн.</span>
+					</div>
+					<div class="bought-block bought-block2 right">
+						<input type="text" class="modinp inpfull" placeholder="Текст гравировки/ссылка на картинку">
+						<h6>Опции товара:</h6>
+						<ol>
+							<li class="radio1 list1">
+								<input type="radio" name="optionsRadios1.1" id="optionsRadios1.1" value="option1.1" checked="checked">
+								<label for="optionsRadios1.1">Мужской</label>
+								<input type="radio" name="optionsRadios1.1" id="optionsRadios2.1" value="option2.1">
+								<label for="optionsRadios2.1">Женский</label>
+							</li>
+							<li class="list2">Размер: 
+								<select name="" id="" class="modinp">
+									<option value="S - 17 см">S - 17 см</option>
+									<option value="S - 17 см">S - 17 см</option>
+									<option value="S - 17 см">S - 17 см</option>
+								</select>
+							</li>
+							<li class="radio1 list3">
+								<p>Внутренняя гравировка <span>(+50 грн.)</span>:</p>
+								<input type="radio" name="optionsRadios2.1" id="optionsRadios3.1" value="option3.1" checked="checked">
+								<label for="optionsRadios3.1">Да</label>
+								<input type="radio" name="optionsRadios2.1" id="optionsRadios4.1" value="option4.1">
+								<label for="optionsRadios4.1">Нет</label>
+								<input type="text" class="modinp right liinp" placeholder="Текст/ссылка на картинку">
+								<div class="clearfix"></div>
+							</li>
+							<li class="radio1 list3">
+								<p>Подарочная коробка <span>(+100 грн.)</span>:</p>
+								<div class="forcol">
+									<input type="radio" name="optionsRadios3.1" id="optionsRadios5.1" value="option5.1" checked="checked">
+									<label for="optionsRadios5.1">Да</label>
+									<input type="radio" name="optionsRadios3.1" id="optionsRadios6.1" value="option6.1">
+									<label for="optionsRadios6.1">Нет</label>
+								</div>	
+								<span>Цвет:</span>
+								<input type="radio" name="optionsRadios4.1" id="optionsRadios7.1" value="option7.1">
+								<label for="optionsRadios7.1">Коричневая</label>
+								<input type="radio" name="optionsRadios4.1" id="optionsRadios8.1" value="option8.1" checked="checked">
+								<label for="optionsRadios8.1">Бежевая</label>
+							</li>
+						</ol>
+						<input type="text" class="modinp" placeholder="Имя Фамилия">
+						<input type="text" class="modinp right"placeholder="Номер телефона">
+						<textarea name="" class="modinp" placeholder="Комментарий..."></textarea>
+					</div>
+					<div class="bought-block bought-block2 right bought-block2-2">
+						<input type="text" class="modinp inpfull" placeholder="Текст гравировки/ссылка на картинку">
+						<h6>Опции товара:</h6>
+						<ol>
+							<li class="radio1 list1">
+								<input type="radio" name="optionsRadios1.2" id="optionsRadios1.2" value="option1" checked="checked">
+								<label for="optionsRadios1.2">Мужской</label>
+								<input type="radio" name="optionsRadios1.2" id="optionsRadios2.2" value="option2.2">
+								<label for="optionsRadios2.2">Женский</label>
+							</li>
+							<li class="list2">Размер: 
+								<select name="" id="" class="modinp">
+									<option value="S - 17 см">S - 17 см</option>
+									<option value="S - 17 см">S - 17 см</option>
+									<option value="S - 17 см">S - 17 см</option>
+								</select>
+							</li>
+							<li class="radio1 list3">
+								<p>Внутренняя гравировка <span>(+50 грн.)</span>:</p>
+								<input type="radio" name="optionsRadios2.2" id="optionsRadios3.2" value="option3.2" checked="checked">
+								<label for="optionsRadios3.2">Да</label>
+								<input type="radio" name="optionsRadios2.2" id="optionsRadios4.2" value="option4.2">
+								<label for="optionsRadios4.2">Нет</label>
+								<input type="text" class="modinp right liinp" placeholder="Текст/ссылка на картинку">
+								<div class="clearfix"></div>
+							</li>
+							<li class="radio1 list3">
+								<p>Подарочная коробка <span>(+100 грн.)</span>:</p>
+								<div class="forcol">
+									<input type="radio" name="optionsRadios3.2" id="optionsRadios5.2" value="option5.2" checked="checked">
+									<label for="optionsRadios5.2">Да</label>
+									<input type="radio" name="optionsRadios3.2" id="optionsRadios6.2" value="option6.2">
+									<label for="optionsRadios6.2">Нет</label>
+								</div>	
+								<span>Цвет:</span>
+								<input type="radio" name="optionsRadios4.2" id="optionsRadios7.2" value="option7.2">
+								<label for="optionsRadios7.2">Коричневая</label>
+								<input type="radio" name="optionsRadios4.2" id="optionsRadios8.2" value="option8.2" checked="checked">
+								<label for="optionsRadios8.2">Бежевая</label>
+							</li>
+						</ol>
+						<input type="text" class="modinp" placeholder="Имя Фамилия">
+						<input type="text" class="modinp right"placeholder="Номер телефона">
+						<textarea name="" class="modinp" placeholder="Комментарий..."></textarea>
+					</div>
+					<button class="right modorder" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать</button>
+					<div class="clearfix"></div>
+    			</div>
+  			</div>
+		</div>
+		<div class="modal fade bs-example-modal-lg1 modallarge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		  	<div class="modal-dialog modal-lg1">
+		    	<div class="modal-content mod-2">
+		    		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		    		<h3>Оформление заказа</h3>
+					<b></b>
+					<span>Выбор цвета:</span>
+					<input type="radio" name="optionsRadios5" id="optionsRadios9" value="option9" checked="checked">
+					<label for="optionsRadios9">Коричневый</label>
+					<input type="radio" name="optionsRadios5" id="optionsRadios10" value="option10">
+					<label for="optionsRadios10">Бежевый</label>
+					<input type="text" class="modinp" placeholder="Имя Фамилия">
+					<input type="text" class="modinp right"placeholder="Номер телефона">
+					<textarea name="" class="modinp" placeholder="Комментарий..."></textarea>
+					<button class="right modorder" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать</button>
+					<div class="clearfix"></div>
+		    	</div>
+		  	</div>
+		</div>
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		  	<div class="modal-dialog modal-sm">
+		    	<div class="modal-content mod-3">
+		      		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		      		<p>
+		      			<img src="images/check.png" height="56" width="56" alt="">
+		      			<span>Спасибо! Ваш заказ принят!</span>
+		      		</p>
+		      		<p>Заяка отправлена в обработку. Наш менеджер свяжется с вами в течении 24 часов.</p>
+		    	</div>
+		  	</div>
+		</div>
+		<div class="modal fade bs-example-modal-sm1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		  	<div class="modal-dialog modal-sm1">
+		    	<div class="modal-content mod-3">
+		      		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		      		<p>
+		      			<img src="images/check.png" height="56" width="56" alt="">
+		      			<span>Спасибо! Ваша заявка принята!</span>
+		      		</p>
+		      		<p>Заяка отправлена в обработку. Наш менеджер свяжется с вами в течении 24 часов.</p>
+		    	</div>
+		  	</div>
+		</div>
+		<script>
 			$(document).ready(function() {
-				$(".fancybox").fancybox({
-				    helpers: {
-				        overlay: {
-				            locked: false
-				        }
-				    }
-				});
-			});
-		</script>
-		<script type="text/javascript">
-			$(function() {
-				$(window).scroll(function() {
-					if($(this).scrollTop() != 0) {
-						$('#toTop').fadeIn();
-					} else {
-						$('#toTop').fadeOut();
-					}
-				});
-				$('#toTop').click(function() {
-					$('body,html').animate({scrollTop:0},800);
-				});
-			});
+    			$(document).ready(function() {
+    				$('.vertical').lightSlider({
+      					gallery:true,
+				      	item:1,
+				      	vertical:true,
+				      	verticalHeight:205,
+				      	vThumbWidth:50,
+				      	thumbItem:4,
+				      	thumbMargin:4,
+				      	slideMargin:10
+    				});  
+  				}); 
+  			});
 		</script>
 	</body>
 </html>

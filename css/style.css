@@ -35,16 +35,20 @@ header{
 	background: #000;
 }
 header .logo{
-	margin: 22px 0;
+	margin: 11px 0;
 }
 header .menu{
 	display: none;
 }
 header .navv{
-	margin: 12px 0;
+	margin: 0;
 }
 header .navv li{
 	display: inline-block;
+    margin: 0 0 5px;	
+}
+header .navv li:last-child{
+	margin: 0;
 }
 header .navv li a{
 	display: block;
@@ -52,6 +56,7 @@ header .navv li a{
 	font-size: 14px;
 	padding: 14px 20px;
 	border-right: 1px solid #4c4c4c;
+	text-decoration: none;
 }
 header .navv li a:hover{
 	text-decoration: none;
@@ -144,7 +149,7 @@ header .navv li:last-child a{
 }
 .section-block .cat-block{
 	display: inline-block;
-	width: 30%;
+	width: 31%;
 	min-width: 290px;
 	box-sizing: border-box;
 	padding: 30px;
@@ -192,6 +197,66 @@ header .navv li:last-child a{
 }
 .section-block .cat-block1{
 	margin-right: 10%;
+}
+.section-block .cat-block a{
+	max-width: 290px;
+	width: 100%;
+	height: 250px;
+	display: block;
+    margin: 0 auto;	
+}
+.section-block .cat-block a div{
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.section-block .cat-block a div span{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 16px;
+}
+.section-block .cat-block a div b{
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    display: block;
+    border-bottom: 1px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0 0;
+}
+.section-block .cat-block1 a{
+	background: url(../images/img1.png) center center no-repeat;
+}
+.section-block .cat-block2 a{
+	background: url(../images/img2.png) center center no-repeat;
+}
+.section-block .cat-block3 a{
+	background: url(../images/img3.png) center center no-repeat;
+}
+.section-block .cat-block4 a{
+	background: url(../images/img4.png) center center no-repeat;
+}
+.section-block .cat-block5 a{
+	background: url(../images/img5.png) center center no-repeat;
+}
+.section-block .cat-block6 a{
+	background: url(../images/img6.png) center center no-repeat;
+}
+.section-block .cat-block7 a{
+	background: url(../images/img7.png) center center no-repeat;
+}
+.section-block .cat-block8 a{
+	background: url(../images/img8.png) center center no-repeat;
+}
+.section-block .cat-block a:hover div{
+	display: block;
+	background: rgba(0,0,0,.5);
 }
 .section-block .cat-block img{
 	width: 100%;
@@ -251,6 +316,7 @@ header .navv li:last-child a{
 	bottom: 15%;
 	right: 60px;
 	text-align: right;
+	width: 300px;
 }
 .sec-block .price span{
 	font-size: 40px;
@@ -265,6 +331,10 @@ header .navv li:last-child a{
     background: #ffa066;
     cursor: pointer;
     outline: none;
+}
+.sec-block .price button>a{
+	color: #fff;
+	text-decoration: none;
 }
 .sec-block .price button:hover{
 	background: #ff8655;
@@ -420,6 +490,171 @@ footer .footer-block3 span{
 
 
 
+/*MODAL*/
+.bs-example-modal-lg, .bs-example-modal-lg1, .bs-example-modal-sm, .bs-example-modal-sm1{
+	padding-right: 0!important;
+}
+.modal-content{
+	box-sizing: border-box;
+	padding: 40px;
+	position: relative;
+}
+.modal-content .close{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	outline: none;
+}
+.modal-content h3{
+	margin: 0 0 10px;
+    font-size: 22px;
+    text-align: center;
+}
+.modal-content b{
+	display: block;
+    margin: 0 auto 25px;
+    width: 70%;
+    max-width: 400px;
+    height: 1px;
+    border-bottom: 1px solid #a9a9a9;
+}
+.modal-content .bought-block{
+	width: 55%;
+}
+.modal-content .bought-block2-2{
+	margin-top: 30px;
+	width: 100%;
+}
+.modal-content .bought-block1{
+	width: 40%;
+	box-sizing: border-box;
+	padding: 16px;
+	background: #eaeaea;
+	border: 1px solid #b4b4b4;
+	text-align: center;
+}
+.modal-content .bought-block1 img{
+	width: 100%;
+	max-width: 290px;
+	height: auto;
+}
+.modal-content .bought-block1 p{
+	font-size: 16px;
+	margin: 15px 0 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #b5b5b5;
+}
+.modal-content .bought-block1 span{
+	font-size: 22px;
+}
+.modal-content .modinp{
+	font-size: 16px;
+    padding: 5px;
+    height: 35px;
+    border: 1px solid #fdbb94;   
+    outline: none; 
+}
+.modal-content .bought-block2 .inpfull{
+	width: 100%;
+}
+.modal-content .bought-block2 input::-webkit-input-placeholder{
+	font-style: italic;
+}
+.modal-content .bought-block2 h6{
+	font-size: 18px;
+}
+.modal-content .bought-block2 ol{
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+.modal-content .bought-block2 ol .forcol{
+	display: inline-block;
+}
+.modal-content .bought-block2 ol li{
+	list-style: inherit;
+	font-size: 16px;
+	padding-left: 10px;
+    margin: 5px 0;	
+}
+.modal-content input[type=radio], .modal-content input[type=checkbox]{
+	display: none;
+}
+.modal-content input + label, .modal-content input:checked + label{
+	display: inline-block;
+	width: auto;
+	margin-right: 14px;
+    height: 20px;
+    padding-left: 20px;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.modal-content input + label{
+	background-position: -5px -53px;
+}
+.modal-content input:checked + label{
+	background-position: -5px -77px;
+}
+.modal-content .bought-block2 ol li select{
+	margin-left: 15px;
+	min-width: 120px;
+}
+.modal-content .bought-block2 ol li p span{
+	font-size: 10px;
+}
+.modal-content .bought-block2 ol .list3 label{
+	margin-top: 10px;
+}
+.modal-content .bought-block2 ol .list3 .right{
+	min-width: 220px
+}
+.modal-content .bought-block2>input{
+	width: 47%;
+}
+.modal-content textarea.modinp{
+	width: 100%;
+	height: 70px;
+	margin-top: 10px;
+}
+.modal-content .modorder{
+	width: 20%;
+	min-width: 100px;
+	height: 35px;
+	margin-top: 10px;
+	background: #ffa066;
+	border: none;
+	color: #fff;
+	outline: none;
+    clear: both;	
+}
+.modal-content .modorder:hover{
+	background: #ff8655;
+}
+.mod-2 span{
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 50px;
+}
+.mod-2 input{
+	width: 48%;
+}
+.mod-3 p img, .mod-3 p span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.mod-3 p img{
+	width: 35%;
+	max-width: 56px;
+	height: auto;
+}
+.mod-3 p span{
+	width: 60%;
+}
+.modal .modal-sm, .modal .modal-sm1{
+	max-width: 300px;
+	margin: 10px auto;
+}
+
 
 
 
@@ -446,7 +681,7 @@ footer .footer-block3 span{
 	}
 	header .menu{
 		display: inline-block;
-		margin: 14px -10px 0 0;
+		margin: 4px -10px 0 0;
 		padding: 10px;
 	}
 	header .menu:hover{
@@ -492,6 +727,15 @@ footer .footer-block3 span{
 		margin: 15px auto;
 	}
 }
+@media (max-width: 992px){
+	.modal .modal-lg, .modal .modal-lg1{
+		width: 95%;
+	    margin: 10px auto;	
+	}
+	.modal-content{
+		padding: 20px;
+	}
+}
 @media (max-width: 900px){
 	footer .footer-block{
 		width: 49%;
@@ -500,12 +744,19 @@ footer .footer-block3 span{
 		display: block;
 		width: 100%;
 	}
+	.modal-content .bought-block2 ol .list3 .forcol{
+		display: block;
+	}
 }
 @media (max-width: 800px){
 	.dellivery .dellivery-block{
 		display: block;
 		width: 100%;
 		margin-bottom: 10px;
+	}
+	.liinp{
+		float: none;
+		width: 100%;
 	}
 }
 @media (max-width: 750px){
@@ -533,6 +784,13 @@ footer .footer-block3 span{
 		float: right;
 		margin-right: 10px;
 		text-align: center;
+	}
+}
+@media (max-width: 640px){
+	.modal-content .bought-block{
+		display: block;
+		width: 100%;
+		margin: 10px 0;
 	}
 }
 @media (max-width: 600px){
@@ -565,9 +823,21 @@ footer .footer-block3 span{
 	footer .footer-block1{
 		padding-top: 40px;
 	}
+	.mod-2 span{
+		margin-right: 0;
+	}
+}
+@media (max-width: 480px){
+	.mod-2 span{
+		display: block;
+	}
+	.mod-2 input{
+		width: 100%;
+		margin: 5px 0;
+	}
 }
 @media (max-width: 400px){
-	/*.section-block .cat-block button.right{
-		float: none;
-	}*/
+	.modal-content .bought-block2 ol li>span{
+		display: block;
+	}
 }

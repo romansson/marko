@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-check-off {
+    width: 13px;
+    height: 14px;
+    background-position: -5px -5px;
+}
+
+.sprite-check-on {
+    width: 16px;
+    height: 16px;
+    background-position: -5px -29px;
+}
+
+.sprite-radio-off {
+    width: 13px;
+    height: 14px;
+    background-position: -5px -55px;
+}
+
+.sprite-radio-on {
+    width: 13px;
+    height: 14px;
+    background-position: -5px -79px;
+}
